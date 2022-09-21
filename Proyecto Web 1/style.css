@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
@@ -13,7 +13,10 @@ a{
 .padre{
     display: flex;
     flex-flow: column nowrap;
-    
+}
+
+.margen-interno{
+    padding: 0 2rem;
 }
     .header{
         background: url(img/bg1.jpg);
@@ -68,38 +71,93 @@ a{
                 }
 
         .texto-principal{
-            background: #E6D2AA;
+            /* background: #E6D2AA; */
+            height: 50rem;
+            display: flex;
+            align-items: center;
         }
             h1{
-                background: #F1EFDC;
+                font-family: serif;
+                font-size: 1.3rem;
+                color: #fff;
+                font-weight: 1rem;
+                text-align: center;
+                line-height: 1.6;
             }
 /* Fin del header */
 
 
     .section{
-        background: #000;
+        background: #040207;
         display: flex;
     }
         .articulos{
-            background: #30d3d3;
+            background: #040207;
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;    
         }
             .articulo{
-                background: #395B64;
-                flex: 1 1 auto;
+                /* background: #395B64; */
+                flex: 1 1 40%;
+                color: #671472;
+                font-size: 1.2rem;
+                letter-spacing: 1;
+                margin: 1rem 1rem 0 0;
+                background: #040207;
+            }
+            .articulo img{
+                width: 100%;
+            }
+            .articulo a{
+                color: #A5C9CA;
+                font-size: 1rem;
+                padding: 1rem;
+                background: #330737;
+                margin: 1rem 0;
+                display: inline-block;
+            }
+            .articulo a:hover{
+                color: #fff;
+            }
+            h3{
+                color: rgb(186, 127, 127);
+                font-size: 1.5rem;
+
+                margin-top: 1rem;
+            }
+            h2{
+                color: #4f077c;
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding: 2 0 1rem 0; 
             }
             .navegacion{
-                background: #A5C9CA;
+                background: #330737;
                 flex: 1 1 100%;
             }
+            .navegacion a{
+                color: #730fb1;
+                font-size: 1rem;
+                padding: 0 1rem;
+                text-transform: uppercase;
+            }
         .aside{
-            background: #A5C9CA; 
+            /* background: #A5C9CA;  */
             flex: 1 1 auto;
+            margin: 1rem 0.5rem 10rem 0;
+        }
+        .aside img{
+            width: 100%;
+        }
+        h4{
+            background: #190c2d;
+            color: #fff;
+            font-size: 1.5rem;
+            text-transform: uppercase;
         }
             .publicidad{
-                background: #E7F6F2;
+                /* background: #E7F6F2; */
             }
     .footer{
         background: #000;
@@ -110,10 +168,6 @@ a{
             background: #E7F6F2;
             width: 30rem;
         }
-
-    .section{
-        background: #000;
-    }
 
 @media all and (max-width:800px){
     .section{
