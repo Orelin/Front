@@ -169,7 +169,15 @@ a{
             width: 30rem;
         }
 
-@media all and (max-width:800px){
+@media all and (max-width:60rem){
+    .off{
+        display: none;
+    }
+}
+
+
+
+@media all and (max-width:50rem){
     .section{
         flex-direction: column;
     }
@@ -182,13 +190,13 @@ a{
         justify-content: center;
     }
 }
-@media all and (max-width:600px){
+@media all and (max-width:35rem){
     .articulo{
         flex-direction: column;
     }
 }
 
-@media all and (max-width:400px){
+@media all and (max-width:25rem){
     .aside{
         flex-direction: column;
     }
