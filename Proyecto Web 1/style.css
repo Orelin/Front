@@ -108,7 +108,12 @@ a{
             }
             .articulo img{
                 width: 100%;
-            }
+                border-radius: 1rem;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+}
             .articulo a{
                 color: #A5C9CA;
                 font-size: 1rem;
@@ -172,6 +177,9 @@ a{
 @media all and (max-width:60rem){
     .off{
         display: none;
+    }
+    .nav a{
+        font-size: 2rem;
     }
 }
 
