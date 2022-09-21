@@ -1,5 +1,5 @@
 *{
-    margin: 10px;
+    margin: 0;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -27,8 +27,9 @@ a{
             background: rgba(0, 0, 0, 0.1);
             display: flex;
             flex-flow: row nowrap;
-            height: 100px;        
+            height: 3rem;        
             align-items: center;
+            border-bottom: 0.2rem solid rgba(255, 255, 255, .5);
         }
             .logo{
                 flex: 1 1 auto;
@@ -45,7 +46,7 @@ a{
             }
                 .nav a{
                     color: #fff;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     text-transform: uppercase;
                     padding: 0 1rem;
                     letter-spacing: 0.2rem;
@@ -53,10 +54,18 @@ a{
                 .nav a:hover{
                     color: #343434;
                 }
-                
             .social{
                 flex: 1 1 auto;
+                display: flex;
             }
+                .social a{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    padding: 0% 1rem;
+                }
+                .social a:hover{
+                    color: #343434;
+                }
 
         .texto-principal{
             background: #E6D2AA;
