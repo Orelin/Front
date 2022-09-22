@@ -32,14 +32,15 @@ a{
             flex-flow: row nowrap;
             height: 3rem;        
             align-items: center;
-            border-bottom: 0.2rem solid rgba(255, 255, 255, .5);
+            border-bottom: 0.01rem solid #bd24c4;
         }
             .logo{
                 flex: 1 1 auto;
             }
                 .logo a{
-                    color: #fff;
+                    color: #bd24c4;
                     font-size: 2rem;
+                    font-family: 'Times New Roman', Times, serif;
                 }
                 .logo a:hover{
                     color: #343434;
@@ -126,9 +127,8 @@ a{
                 color: #fff;
             }
             h3{
-                color: rgb(186, 127, 127);
+                color: #bd24c4;
                 font-size: 1.5rem;
-
                 margin-top: 1rem;
             }
             h2{
@@ -150,7 +150,7 @@ a{
         .aside{
             /* background: #A5C9CA;  */
             flex: 1 1 auto;
-            margin: 1rem 0.5rem 10rem 0;
+            margin: 1rem 1.5rem 2rem 0;
         }
         .aside img{
             width: 100%;
@@ -158,11 +158,12 @@ a{
         h4{
             background: #190c2d;
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 2rem;
             text-transform: uppercase;
         }
             .publicidad{
                 /* background: #E7F6F2; */
+                width: 5rem;
             }
     .footer{
         background: #000;
