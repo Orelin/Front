@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .menu { grid-area: 1 / 1 / 2 / 5; }
+    .articles { grid-area: 2 / 1 / 5 / 3; }
+    .news { grid-area: 2 / 3 / 5 / 5; }
+    .contact { grid-area: 5 / 1 / 6 / 5; }
+
+    .menu{
+        background: #F5EFE6;
+        text-align: center;
+    }
+        .logo {
+            background: pink;
+
+        }
+    .articles{
+        background: #E8DFCA;
+    }
+
+    .news{
+        background: #AEBDCA;
+    }
+    .contact{
+        background: #7895B2;
+    }
