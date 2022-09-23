@@ -5,11 +5,12 @@
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4fr 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+    grid-column-gap: 0px; /*Separacíon columnas */
+    grid-row-gap: 0px; /*Separacíon filas*/
+    border-bottom: 0.1rem solid #000;
+}
     
     .menu { grid-area: 1 / 1 / 2 / 5; }
     .articles { grid-area: 2 / 1 / 5 / 3; }
@@ -18,15 +19,35 @@
 
     .menu{
         background: #F5EFE6;
+        border-bottom: 0.1rem solid #000;
         text-align: center;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
         .logo {
             background: pink;
-
+            border-bottom: 0.1rem solid #000;
+        }
+        .nav{
+            border-bottom: 0.1rem solid #000;
+            height: 100%;
+        }
+        .nav a {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            padding: 0 10% 0 10%;
         }
     .articles{
         background: #E8DFCA;
+        border-bottom: 0.1rem solid #000;
     }
+        .article{
+            justify-content: center;
+            background: #d8ec8b;
+            border-bottom: 0.1rem solid #000;
+        }
+
 
     .news{
         background: #AEBDCA;

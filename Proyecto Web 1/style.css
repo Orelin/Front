@@ -22,7 +22,7 @@ a{
         background: url(img/bg1.jpg);
         background-position: center;
         background-attachment: contain;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
     }
@@ -108,7 +108,7 @@ a{
                 background: #040207;
             }
             .articulo img{
-                width: 100%;
+                width: 80%;
                 border-radius: 1rem;
                 -webkit-border-radius: 1rem;
                 -moz-border-radius: 1rem;
@@ -153,17 +153,18 @@ a{
             margin: 1rem 1.5rem 2rem 0;
         }
         .aside img{
-            width: 100%;
+            width: auto;
+            height: auto;
+            max-width: 20rem;
         }
         h4{
-            background: #190c2d;
-            color: #fff;
-            font-size: 2rem;
+            color: #6709a2;
+            font-size: 1.5rem;
             text-transform: uppercase;
+            text-align: center;
         }
             .publicidad{
                 /* background: #E7F6F2; */
-                width: 5rem;
             }
     .footer{
         background: #000;
@@ -175,6 +176,7 @@ a{
             width: 30rem;
         }
 
+
 @media all and (max-width:60rem){
     .off{
         display: none;
@@ -183,9 +185,6 @@ a{
         font-size: 2rem;
     }
 }
-
-
-
 @media all and (max-width:50rem){
     .section{
         flex-direction: column;
@@ -196,17 +195,23 @@ a{
     }
     .aside{
         display: flex;
-        justify-content: center;
+    }
+    .aside img {
+        width: 100%;
+        height: auto;
+    }
+    .aside h4{
+        display: none;
     }
 }
 @media all and (max-width:35rem){
     .articulo{
         flex-direction: column;
     }
+    .aside{
+        display: flex;
+        flex-direction: rows;
+    }
+
 }
 
-@media all and (max-width:25rem){
-    .aside{
-        flex-direction: column;
-    }
-}
