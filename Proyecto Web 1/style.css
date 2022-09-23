@@ -93,13 +93,12 @@ a{
         display: flex;
     }
         .articulos{
-            background: #040207;
+            background: #020706;
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;    
         }
             .articulo{
-                /* background: #395B64; */
                 flex: 1 1 40%;
                 color: #671472;
                 font-size: 1.2rem;
@@ -172,7 +171,7 @@ a{
         justify-content: center;
     }
         .pie{
-            background: #E7F6F2;
+            background: #040207;
             width: 30rem;
         }
 
