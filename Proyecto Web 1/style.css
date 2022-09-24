@@ -11,9 +11,17 @@ a{
 }
 
 .padre{
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
 }
+
+.header { grid-area: 1 / 1 / 2 / 5; }
+.section { grid-area: 2 / 1 / 4 / 4; }
+.aside { grid-area: 2 / 4 / 4 / 5; }
+.working { grid-area: 4 / 1 / 5 / 5; } 
 
 .margen-interno{
     padding: 0 2rem;
@@ -23,19 +31,15 @@ a{
         background-position: center;
         background-attachment: contain;
         background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
     }
         .menu{
             background: rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-flow: row nowrap;
-            height: 3rem;        
             align-items: center;
             border-bottom: 0.01rem solid #bd24c4;
+            display: flex;
         }
             .logo{
-                flex: 1 1 auto;
+                grid-row: center;
             }
                 .logo a{
                     color: #bd24c4;
@@ -46,7 +50,7 @@ a{
                     color: #343434;
                 }
             .nav{
-                flex: 5 1 auto;
+                justify-content: center;
             }
                 .nav a{
                     color: #fff;
@@ -59,8 +63,7 @@ a{
                     color: #343434;
                 }
             .social{
-                flex: 1 1 auto;
-                display: flex;
+                justify-content: end;
             }
                 .social a{
                     color: #fff;
@@ -74,7 +77,6 @@ a{
         .texto-principal{
             /* background: #E6D2AA; */
             height: 50rem;
-            display: flex;
             align-items: center;
         }
             h1{
@@ -90,16 +92,12 @@ a{
 
     .section{
         background: #040207;
-        display: flex;
     }
         .articulos{
             background: #020706;
-            flex: 2 1 auto;
-            display: flex;
-            flex-flow: row wrap;    
+
         }
             .articulo{
-                flex: 1 1 40%;
                 color: #671472;
                 font-size: 1.2rem;
                 letter-spacing: 1;
@@ -120,7 +118,6 @@ a{
                 padding: 1rem;
                 background: #330737;
                 margin: 1rem 0;
-                display: inline-block;
             }
             .articulo a:hover{
                 color: #fff;
@@ -138,7 +135,6 @@ a{
             }
             .navegacion{
                 background: #330737;
-                flex: 1 1 100%;
             }
             .navegacion a{
                 color: #730fb1;
@@ -147,9 +143,7 @@ a{
                 text-transform: uppercase;
             }
         .aside{
-            /* background: #A5C9CA;  */
-            flex: 1 1 auto;
-            margin: 1rem 1.5rem 2rem 0;
+            background: #020706; 
         }
         .aside img{
             width: auto;
@@ -162,17 +156,17 @@ a{
             text-transform: uppercase;
             text-align: center;
         }
-            .publicidad{
-                /* background: #E7F6F2; */
-            }
+    .working{
+        background: black;
+        width: auto;
+    }
     .footer{
-        background: #000;
-        display: flex;
+        background: #fff;
         justify-content: center;
+        
     }
         .pie{
-            background: #040207;
-            width: 30rem;
+            background: #fff;
         }
 
 
@@ -183,34 +177,5 @@ a{
     .nav a{
         font-size: 2rem;
     }
-}
-@media all and (max-width:50rem){
-    .section{
-        flex-direction: column;
-    }
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
-    .aside{
-        display: flex;
-    }
-    .aside img {
-        width: 100%;
-        height: auto;
-    }
-    .aside h4{
-        display: none;
-    }
-}
-@media all and (max-width:35rem){
-    .articulo{
-        flex-direction: column;
-    }
-    .aside{
-        display: flex;
-        flex-direction: rows;
-    }
-
 }
 
