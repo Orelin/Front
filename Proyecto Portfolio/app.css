@@ -168,13 +168,14 @@ body {
 .seccion .p{}
 .seccion .grid{
     width: 90%;
+    max-width: 40em;
     background: lightcoral;
+    margin: 1em 0;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1em;
 }
-.seccion .a{}
 .seccion .article{
     width: 100%;
     min-height: 30vh;
@@ -184,19 +185,51 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+.seccion .a{}
+.seccion .figure{
+    width: 100%;
+    background: red;
 }
 .seccion .img{
     width: 100%;
     background: blue;
 }
-.seccion .h4{}
+.seccion .h4{
+    width: 100%;
+    height: 50%;
+    background: coral;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-.about .h2{}
-.about .p{}
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
-.contactoRedes{}
-.contactoRedes .li{}
-.contactoRedes .a{}
-.contactoRedes .svg{}
+.about .h2{
+    margin: 0 0 1em;
+}
+.about .p{
+    max-width: 40em;
+    background: cadetblue;
+    margin: 0 0 1em;
+    text-align: left;
+}
+
+.about .contactoRedes{
+    background: rgb(21, 21, 20);
+}
+.about .li{}
+.about .a{}
+.about .svg{
+    width: 3em;
+    height: 3em;
+    background: red;
+}
 
 
