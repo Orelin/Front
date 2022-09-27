@@ -95,7 +95,8 @@ a{
     }
         .articulos{
             background: #020706;
-
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
             .articulo{
                 color: #671472;
