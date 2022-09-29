@@ -170,7 +170,15 @@ a{
             background: #fff;
         }
 
+        @media all and (max-width:1000px){
+            .articulos{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
 
+
+        
 @media all and (max-width:60rem){
     .off{
         display: none;
