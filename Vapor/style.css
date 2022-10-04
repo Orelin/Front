@@ -12,16 +12,13 @@ a{
 
 .padre{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
 }
 
-.header { grid-area: 1 / 1 / 2 / 5; }
-.section { grid-area: 2 / 1 / 4 / 4; }
-.aside { grid-area: 2 / 4 / 4 / 5; }
-.working { grid-area: 4 / 1 / 5 / 5; } 
+
 
 .margen-interno{
     padding: 0 2rem;
@@ -36,10 +33,11 @@ a{
             background: rgba(0, 0, 0, 0.1);
             align-items: center;
             border-bottom: 0.01rem solid #bd24c4;
-            display: flex;
+            display: grid;
+            grid-template-columns: 10% auto 10%;
         }
             .logo{
-                grid-row: center;
+                
             }
                 .logo a{
                     color: #bd24c4;
@@ -50,7 +48,7 @@ a{
                     color: #343434;
                 }
             .nav{
-                justify-content: center;
+                text-align: center;
             }
                 .nav a{
                     color: #fff;
@@ -83,7 +81,6 @@ a{
                 font-family: serif;
                 font-size: 1.3rem;
                 color: #fff;
-                font-weight: 1rem;
                 text-align: center;
                 line-height: 1.6;
             }
@@ -97,6 +94,7 @@ a{
             background: #020706;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr auto;
         }
             .articulo{
                 color: #671472;
@@ -104,6 +102,7 @@ a{
                 letter-spacing: 1;
                 margin: 1rem 1rem 0 0;
                 background: #040207;
+                text-align: center;
             }
             .articulo img{
                 width: 80%;
@@ -132,10 +131,10 @@ a{
                 color: #4f077c;
                 font-size: 2rem;
                 text-transform: uppercase;
-                padding: 2 0 1rem 0; 
             }
             .navegacion{
                 background: #330737;
+                grid-area: 3/1/4/3;
             }
             .navegacion a{
                 color: #730fb1;
@@ -143,14 +142,6 @@ a{
                 padding: 0 1rem;
                 text-transform: uppercase;
             }
-        .aside{
-            background: #020706; 
-        }
-        .aside img{
-            width: auto;
-            height: auto;
-            max-width: 20rem;
-        }
         h4{
             color: #6709a2;
             font-size: 1.5rem;
@@ -167,19 +158,10 @@ a{
         
     }
         .pie{
-            background: #fff;
+
         }
 
-        @media all and (max-width:1000px){
-            .articulos{
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-        }
-
-
-        
-@media all and (max-width:60rem){
+@media all and (max-width:45rem){
     .off{
         display: none;
     }
@@ -187,4 +169,11 @@ a{
         font-size: 2rem;
     }
 }
-
+@media all and (max-width:25rem){
+    h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
